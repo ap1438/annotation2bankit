@@ -255,31 +255,7 @@ augustus_bankit_toolkit/
 │   ├── gff_parser.py          ← GFF2/GFF3/GTF parser
 │   ├── feature_writer.py      ← BankIt feature table + FASTA writer
 │   └── ncbi_validator.py      ← Validation suite
-│
-└── tests/
-    ├── run_tests.sh           ← Shell test runner (unit + end-to-end)
-    ├── test_augustus_parser.py
-    ├── test_genbank_parser.py
-    ├── test_gff_parser.py
-    └── test_feature_writer.py
-```
 
----
-
-## Running Tests
-
-```bash
-# Unit tests only
-bash tests/run_tests.sh
-
-# Verbose unit tests
-bash tests/run_tests.sh -v
-
-# Unit tests + end-to-end with training data
-bash tests/run_tests.sh --check
-
-# Or with pytest directly
-python -m pytest tests/ -v
 ```
 
 ---
