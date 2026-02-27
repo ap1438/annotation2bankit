@@ -1,0 +1,14 @@
+# augustus_bankit_toolkit requirements
+# =====================================
+# Core dependencies: Python standard library only (no external packages required)
+# All parsing, translation, and file writing uses built-in Python modules.
+#
+# Optional / recommended:
+#   pytest  – for running the test suite
+#   biopython – NOT required, but can be used for additional validation
+
+# Required for test suite
+pytest>=7.0
+
+# Optional: biopython for advanced sequence operations (not used by default)
+# biopython>=1.79
