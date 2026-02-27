@@ -130,7 +130,7 @@ pip install .
 
 ## Quick Start
 
-### Example 1: AUGUSTUS web report → BankIt (HMA4 genes, Wall10 ecotype)
+### Example 1: AUGUSTUS web report → BankIt (HMA4 genes, unknown ecotype)
 
 ```bash
 # 1. Run AUGUSTUS on your sequences at https://bioinf.uni-greifswald.de/augustus/
