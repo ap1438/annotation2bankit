@@ -44,10 +44,10 @@ Parses the HTML output from the [AUGUSTUS web server](https://bioinf.uni-greifsw
 
 ```bash
 python augustus2bankit.py \
-    --augustus  Augustus_Wall10123.html \
-    --fasta     Wall10.HMA4-123.fasta \
+    --augustus  Augustus_BAC_7C17.html \
+    --fasta     BAC_7C17.fasta \
     --organism  "Arabidopsis halleri subsp. halleri" \
-    --isolate   "Wall_10_v1.0.0" \
+    --isolate   "BAC_7C17" \
     --product   "Zn/Cd P(IB)-type ATPase" \
     --outdir    bankit_output/
 ```
@@ -138,24 +138,24 @@ pip install .
 
 # 2. Convert
 python augustus2bankit.py \
-    --augustus  "Augustus_ Wall10123.html" \
-    --fasta     "Wall10.HMA4-123.fasta" \
+    --augustus  "Augustus_BAC_7C17.html" \
+    --fasta     "BAC_7C17.fasta" \
     --organism  "Arabidopsis halleri subsp. halleri" \
-    --isolate   "Wall_10_v1.0.0" \
+    --isolate   "BAC_7C17" \
     --sub-species "halleri" \
     --country   "Germany: Harz mountains, Langelsheim" \
     --date      "2007" \
     --product   "Zn/Cd P(IB)-type ATPase" \
     --locus-tag "AhHMA4" \
-    --outdir    "bankit_wall10/" \
-    --prefix    "wall10_hma4" \
+    --outdir    "bankit_BAC_7C17/" \
+    --prefix    "BAC_7C17_hma4" \
     --primary-only
 
 # 3. Validate
 python validate_bankit.py \
-    --tbl   bankit_wall10/wall10_hma4_feature_table.tbl \
-    --nuc   bankit_wall10/wall10_hma4_nucleotide.fasta \
-    --prot  bankit_wall10/wall10_hma4_protein.fasta
+    --tbl   bankit_BAC_7C17/BAC_7C17_hma4_feature_table.tbl \
+    --nuc   bankit_BAC_7C17/BAC_7C17_hma4_nucleotide.fasta \
+    --prot  bankit_BAC_7C17/BAC_7C17_hma4_protein.fasta
 
 # 4. Upload the .tbl and _nucleotide.fasta to https://www.ncbi.nlm.nih.gov/WebSub/
 ```
