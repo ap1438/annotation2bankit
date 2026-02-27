@@ -115,8 +115,8 @@ python validate_bankit.py \
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/augustus_bankit_toolkit.git
-cd augustus_bankit_toolkit
+git clone https://github.com/ap1438/annotation2bankit.git
+cd annotation2bankit
 
 # No external dependencies required (Python 3.6+ standard library only)
 # Optional: install for test suite
